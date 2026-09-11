@@ -3,7 +3,7 @@
 // Simple 8-N-1 UART transmitter.
 // A write pulse starts one frame when the transmitter is idle.
 module UART_TX #(
-    parameter integer CLKS_PER_BIT = 87  // 10 MHz / 115200 ~= 86.8
+    parameter integer CLKS_PER_BIT =16'd87  // 10 MHz / 115200 ~= 86.8
 )(
     input  wire       clk,
     input  wire       rst,
